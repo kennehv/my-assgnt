@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container{
+        width: 70%;
+        min-height: 60%;
+        margin: auto;
+        border: 2px dashed #453654;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    #result{
+        color: green;
+    }
+
+</style>
+<script>
+
+    function calculate(){
+    first_number = document.getElementById("first_number").value;
+    second_number = document.getElementById("second_number").value;
+    result = parseFloat(first_number) + parseFloat(second_number);
+    document.getElementById("result").innerHTML = "Result = " + result;
+    }
+    function write(){
+
+    }
+
+    function read(){
+        
+    }
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input">
+            <input type="text" id="first_number"></input>
+            <input type="text" id="second_number"></input>
+            <p id="result"></p>
+            <button id="calculate" onclick="calculate()">Calculate</button>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>
