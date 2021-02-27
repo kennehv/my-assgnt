@@ -10,13 +10,15 @@
         width: 70%;
         min-height: 60%;
         margin: auto;
-        border: 2px dashed #453654;
+        border: 2px dashed #0c158d;
         border-radius: 10px;
         padding: 10px;
     }
     #result{
-        color: rgb(21, 20, 94);
+        color: rgb(206, 12, 70);
+        text-transform: uppercase;
     }
+
 
 </style>
 
@@ -27,8 +29,9 @@
         <div class="input">
             <input type="text" id="first_number"></input>
             <input type="text" id="second_number"></input>
-            <p id="result"></p>
+           
             <button id="calculate" onclick="sum()">sum</button>
+            <p id="result"> </p>
         </div>
     </div>
 
@@ -39,10 +42,16 @@
     function sum(){
     first_number = document.getElementById("first_number").value;
     second_number = document.getElementById("second_number").value;
-    result = parseFloat(first_number) + parseFloat(second_number);
-    document.getElementById("result").innerHTML = "Result = " + result;
-    }
-
+    resultofsum = parseFloat(first_number) + parseFloat(second_number);
+    // document.getElementById("result").innerHTML = "Result = " + result;
+    // console.log(result)
+    //alert("Result = " + resultofsum)
+    console.log(resultofsum)
+   // document.getElementById("result").innerHTML ="result =" +resultofsum;
+   
+    document.write("result")
+     }
+    
     function write(){
 
     }
@@ -50,5 +59,7 @@
     function read(){
         
     }
+    // alert("hello world")
+    // document.write(5-4)
 </script>
 </html>
